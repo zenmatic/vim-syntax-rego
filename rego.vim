@@ -17,25 +17,31 @@ syn keyword regoDirective package import allow deny
 syn keyword regoKeywords as default else false import package not null true with some
 
 syn keyword regoFuncAggregates count sum product max min sort all any
-syn keyword regoFuncArrays array.concat array.slice
+syn match regoFuncArrays "\<array\.\(concat\|slice\)\>"
 syn keyword regoFuncSets intersection union
 
-syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper strings.replace_n
+syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper
+syn match regoFuncStrings2 "\<strings\.replace_n\>"
+syn match regoFuncStrings3 "\<contains\>"
 
-syn keyword regoFuncRegex re_match regex.split regex.globs_match regex.template_match regex.find_n regex.find_all_string_submatch_n
-syn keyword regoFuncGlob glob.match glob.quote_meta
-syn keyword regoFuncUnits units.parse_bytes
+syn keyword regoFuncRegex re_match
+syn match regoFuncRegex2 "\<regex\.\(split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
+
+syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
+syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
-syn keyword regoFuncEncoding base64.encode base64.decode base64url.encode base64url.decode urlquery.encode urlquery.encode_object urlquery.decode json.marshal json.unmarshal yaml.marshal yaml.unmarshal
-syn keyword regoFuncTokenSigning io.jwt.encode_sign_raw io.jwt.encode_sign
-syn keyword regoFuncTokenVerification io.jwt.verify_rs256 io.jwt.verify_ps256 io.jwt.verify_es256 io.jwt.verify_hs256 io.jwt.decode io.jwt.decode_verify
-syn keyword regoFuncTime time.now_ns time.parse_ns time.parse_rfc3339_ns time.parse_duration_ns time.date time.clock time.weekday
-syn keyword regoFuncCryptography crypto.x509.parse_certificates
+syn match regoFuncEncoding1 "\<\(base64\|base64url\)\.\(encode\|decode\)\>"
+syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
+syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
+syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
+syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
+syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"
+syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn keyword regoFuncGraphs walk
-syn keyword regoFuncHttp http.send
-syn keyword regoFuncNet net.cidr_contains net.cidr_intersects
-syn keyword regoFuncRego rego.parse_module
-syn keyword regoFuncOpa opa.runtime
+syn match regoFuncHttp "\<http\.send\>"
+syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_intersects\)\>"
+syn match regoFuncRego "\<rego\.parse_module\>"
+syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
 
 hi def link regoDirective Statement
@@ -44,11 +50,16 @@ hi def link regoFuncAggregates Statement
 hi def link regoFuncArrays Statement
 hi def link regoFuncSets Statement
 hi def link regoFuncStrings Statement
+hi def link regoFuncStrings2 Statement
+hi def link regoFuncStrings3 Statement
 hi def link regoFuncRegex Statement
+hi def link regoFuncRegex2 Statement
 hi def link regoFuncGlob Statement
 hi def link regoFuncUnits Statement
 hi def link regoFuncTypes Statement
-hi def link regoFuncEncoding Statement
+hi def link regoFuncEncoding1 Statement
+hi def link regoFuncEncoding2 Statement
+hi def link regoFuncEncoding3 Statement
 hi def link regoFuncTokenSigning Statement
 hi def link regoFuncTokenVerification Statement
 hi def link regoFuncTime Statement
