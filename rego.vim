@@ -33,13 +33,14 @@ syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_obje
 syn match regoFuncEncoding1 "\<\(base64\|base64url\)\.\(encode\|decode\)\>"
 syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
 syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
+syn match regoFuncEncoding4 "\<json\.filter\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"
 syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn keyword regoFuncGraphs walk
 syn match regoFuncHttp "\<http\.send\>"
-syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_intersects\)\>"
+syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_intersects\|cidr_expand\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
@@ -60,6 +61,7 @@ hi def link regoFuncTypes Statement
 hi def link regoFuncEncoding1 Statement
 hi def link regoFuncEncoding2 Statement
 hi def link regoFuncEncoding3 Statement
+hi def link regoFuncEncoding4 Statement
 hi def link regoFuncTokenSigning Statement
 hi def link regoFuncTokenVerification Statement
 hi def link regoFuncTime Statement
