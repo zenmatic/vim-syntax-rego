@@ -25,6 +25,9 @@ concat
 contains
 count
 crypto.x509.parse_certificates
+crypto.md5
+crypto.sha1
+crypto.sha256
 default
 deny
 else

@@ -38,6 +38,7 @@ syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"
 syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
+syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_intersects\|cidr_expand\)\>"
@@ -66,6 +67,7 @@ hi def link regoFuncTokenSigning Statement
 hi def link regoFuncTokenVerification Statement
 hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
+hi def link regoFuncCryptography2 Statement
 hi def link regoFuncGraphs Statement
 hi def link regoFuncHttp Statement
 hi def link regoFuncNet Statement
