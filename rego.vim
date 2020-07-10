@@ -27,14 +27,14 @@ syn match regoFuncStrings3 "\<contains\>"
 syn keyword regoFuncRegex re_match
 syn match regoFuncRegex2 "\<regex\.\(split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
 
-syn match regoFuncObject "\<object\.get\>"
+syn match regoFuncObject "\<object\.\(get\|remove\|union\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
 syn match regoFuncEncoding1 "\<\(base64\|base64url\)\.\(encode\|decode\)\>"
 syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
 syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
-syn match regoFuncEncoding4 "\<json\.filter\>"
+syn match regoFuncEncoding4 "\<json\.\(filter\|remove\)\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"

@@ -57,6 +57,7 @@ is_object
 is_set
 is_string
 json.filter
+json.remove
 json.marshal
 json.unmarshal
 lower
@@ -68,6 +69,9 @@ net.cidr_intersects
 not
 null
 object.get
+object.remove
+object.union
+object.filter
 opa.runtime
 package
 package
