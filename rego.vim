@@ -43,7 +43,7 @@ syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncHttp "\<http\.send\>"
-syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_intersects\|cidr_expand\)\>"
+syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace

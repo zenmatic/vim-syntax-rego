@@ -70,6 +70,7 @@ lower
 max
 min
 net.cidr_contains
+net.cidr_contains_matches
 net.cidr_expand
 net.cidr_intersects
 not
