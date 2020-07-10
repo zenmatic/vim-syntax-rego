@@ -27,6 +27,7 @@ syn match regoFuncStrings3 "\<contains\>"
 syn keyword regoFuncRegex re_match
 syn match regoFuncRegex2 "\<regex\.\(split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
 
+syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"
 syn match regoFuncObject "\<object\.\(get\|remove\|union\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
@@ -47,6 +48,7 @@ syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
 
+hi def link regoFuncBits Statement
 hi def link regoDirective Statement
 hi def link regoKeywords Statement
 hi def link regoFuncAggregates Statement
