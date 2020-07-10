@@ -42,6 +42,7 @@ false
 format_int
 glob.match
 glob.quote_meta
+graph.reachable
 http.send
 import
 import

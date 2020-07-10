@@ -42,6 +42,7 @@ syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_dura
 syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
+syn match regoFuncGraphs2 "\<graph\.reachable\>"
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
@@ -72,6 +73,7 @@ hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
 hi def link regoFuncCryptography2 Statement
 hi def link regoFuncGraphs Statement
+hi def link regoFuncGraphs2 Statement
 hi def link regoFuncHttp Statement
 hi def link regoFuncNet Statement
 hi def link regoFuncRego Statement
