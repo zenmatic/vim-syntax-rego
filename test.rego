@@ -56,6 +56,14 @@ io.jwt.verify_es256
 io.jwt.verify_hs256
 io.jwt.verify_ps256
 io.jwt.verify_rs256
+io.jwt.verify_rs384
+io.jwt.verify_rs512
+io.jwt.verify_ps384
+io.jwt.verify_ps512
+io.jwt.verify_es384
+io.jwt.verify_es512
+io.jwt.verify_hs384
+io.jwt.verify_hs512
 is_array
 is_boolean
 is_null

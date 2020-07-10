@@ -38,7 +38,8 @@ syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
 syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
 syn match regoFuncEncoding4 "\<json\.\(filter\|remove\)\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
-syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
+syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
+syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"
 syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
@@ -70,7 +71,8 @@ hi def link regoFuncEncoding2 Statement
 hi def link regoFuncEncoding3 Statement
 hi def link regoFuncEncoding4 Statement
 hi def link regoFuncTokenSigning Statement
-hi def link regoFuncTokenVerification Statement
+hi def link regoFuncTokenVerification1 Statement
+hi def link regoFuncTokenVerification2 Statement
 hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
 hi def link regoFuncCryptography2 Statement
