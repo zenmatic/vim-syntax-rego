@@ -27,6 +27,7 @@ syn match regoFuncStrings3 "\<contains\>"
 syn keyword regoFuncRegex re_match
 syn match regoFuncRegex2 "\<regex\.\(split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
 
+syn match regoFuncUuid "\<uuid.rfc4122\>"
 syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"
 syn match regoFuncObject "\<object\.\(get\|remove\|union\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
@@ -37,17 +38,20 @@ syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
 syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
 syn match regoFuncEncoding4 "\<json\.\(filter\|remove\)\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
-syn match regoFuncTokenVerification "\<io\.jwt\.\(verify_rs256\|verify_ps256\|verify_es256\|verify_hs256\|decode\|decode_verify\)\>"
+syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
+syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\)\>"
 syn match regoFuncCryptography "\<crypto\.x509\.parse_certificates\>"
 syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
+syn match regoFuncGraphs2 "\<graph\.reachable\>"
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
 
+hi def link regoFuncUuid Statement
 hi def link regoFuncBits Statement
 hi def link regoDirective Statement
 hi def link regoKeywords Statement
@@ -67,11 +71,13 @@ hi def link regoFuncEncoding2 Statement
 hi def link regoFuncEncoding3 Statement
 hi def link regoFuncEncoding4 Statement
 hi def link regoFuncTokenSigning Statement
-hi def link regoFuncTokenVerification Statement
+hi def link regoFuncTokenVerification1 Statement
+hi def link regoFuncTokenVerification2 Statement
 hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
 hi def link regoFuncCryptography2 Statement
 hi def link regoFuncGraphs Statement
+hi def link regoFuncGraphs2 Statement
 hi def link regoFuncHttp Statement
 hi def link regoFuncNet Statement
 hi def link regoFuncRego Statement
