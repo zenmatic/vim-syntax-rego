@@ -27,6 +27,7 @@ syn match regoFuncStrings3 "\<contains\>"
 syn keyword regoFuncRegex re_match
 syn match regoFuncRegex2 "\<regex\.\(split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
 
+syn match regoFuncObject "\<object\.get\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
@@ -74,6 +75,7 @@ hi def link regoFuncNet Statement
 hi def link regoFuncRego Statement
 hi def link regoFuncOpa Statement
 hi def link regoFuncDebugging Statement
+hi def link regoFuncObject Statement
 
 " https://www.openpolicyagent.org/docs/latest/policy-language/#strings
 syn region      regoString            start=+"+ skip=+\\\\\|\\"+ end=+"+

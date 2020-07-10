@@ -67,6 +67,7 @@ net.cidr_expand
 net.cidr_intersects
 not
 null
+object.get
 opa.runtime
 package
 package
