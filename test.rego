@@ -122,6 +122,7 @@ upper
 urlquery.decode
 urlquery.encode
 urlquery.encode_object
+uuid.rfc4122
 walk
 with
 yaml.marshal
