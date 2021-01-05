@@ -50,6 +50,8 @@ syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_contains_matches\|cidr_inter
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
+syn match regoFuncNumbers "\<numbers\.range\>"
+syn match regoFuncSemver "\<semver\.\(is_valid\|compare\)\>"
 
 hi def link regoFuncUuid Statement
 hi def link regoFuncBits Statement
@@ -84,6 +86,8 @@ hi def link regoFuncRego Statement
 hi def link regoFuncOpa Statement
 hi def link regoFuncDebugging Statement
 hi def link regoFuncObject Statement
+hi def link regoFuncNumbers Statement
+hi def link regoFuncSemver Statement
 
 " https://www.openpolicyagent.org/docs/latest/policy-language/#strings
 syn region      regoString            start=+"+ skip=+\\\\\|\\"+ end=+"+

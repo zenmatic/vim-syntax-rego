@@ -85,6 +85,7 @@ net.cidr_expand
 net.cidr_intersects
 not
 null
+numbers.range(a, b)
 object.filter
 object.get
 object.remove
@@ -101,6 +102,8 @@ regex.split
 regex.template_match
 rego.parse_module
 replace
+semver.is_valid(str)
+semver.compare(str, str)
 some
 sort
 split
