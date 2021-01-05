@@ -97,6 +97,7 @@ product
 re_match
 regex.find_all_string_submatch_n
 regex.find_n
+regex.is_valid(pattern)
 regex.globs_match
 regex.split
 regex.template_match
