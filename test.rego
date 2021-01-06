@@ -22,6 +22,7 @@ base64.encode
 base64.is_valid
 base64url.decode
 base64url.encode
+base64url.encode_no_pad
 bits.and
 bits.lsh
 bits.negate
@@ -45,6 +46,8 @@ format_int
 glob.match
 glob.quote_meta
 graph.reachable
+hex.encode
+hex.decode
 http.send
 import
 import
@@ -74,7 +77,9 @@ is_object
 is_set
 is_string
 json.filter
+json.is_valid
 json.marshal
+json.patch
 json.remove
 json.unmarshal
 lower
@@ -122,6 +127,7 @@ time.parse_duration_ns
 time.parse_ns
 time.parse_rfc3339_ns
 time.weekday
+to_number(x)
 trace
 trim
 trim_left
@@ -141,5 +147,6 @@ urlquery.encode_object
 uuid.rfc4122
 walk
 with
+yaml.is_valid
 yaml.marshal
 yaml.unmarshal

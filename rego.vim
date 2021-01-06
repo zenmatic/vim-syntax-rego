@@ -34,10 +34,10 @@ syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
 syn match regoFuncEncoding1 "\<base64\.\(encode\|decode\|is_valid\)\>"
-syn match regoFuncEncoding2 "\<base64url\.\(encode\|decode\)\>"
+syn match regoFuncEncoding2 "\<base64url\.\(encode\(_no_pad\)\=\|decode\)\>"
 syn match regoFuncEncoding3 "\<urlquery\.\(encode\|decode\|\(en\|de\)code_object\)\>"
-syn match regoFuncEncoding4 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
-syn match regoFuncEncoding5 "\<json\.\(filter\|remove\)\>"
+syn match regoFuncEncoding4 "\<\(json\|yaml\)\.\(is_valid\|marshal\|unmarshal\)\>"
+syn match regoFuncEncoding5 "\<json\.\(filter\|patch\|remove\)\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
 syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
@@ -53,6 +53,8 @@ syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
 syn match regoFuncNumbers "\<numbers\.range\>"
 syn match regoFuncSemver "\<semver\.\(is_valid\|compare\)\>"
+syn keyword regoFuncConversions to_number
+syn match regoFuncHex "\<hex\.\(encode\|decode\)\>"
 
 hi def link regoFuncUuid Statement
 hi def link regoFuncBits Statement
@@ -90,6 +92,8 @@ hi def link regoFuncDebugging Statement
 hi def link regoFuncObject Statement
 hi def link regoFuncNumbers Statement
 hi def link regoFuncSemver Statement
+hi def link regoFuncConversions Statement
+hi def link regoFuncHex Statement
 
 " https://www.openpolicyagent.org/docs/latest/policy-language/#strings
 syn region      regoString            start=+"+ skip=+\\\\\|\\"+ end=+"+
