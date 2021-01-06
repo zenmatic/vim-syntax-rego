@@ -19,6 +19,7 @@ array.slice
 as
 base64.decode
 base64.encode
+base64.is_valid
 base64url.decode
 base64url.encode
 bits.and
@@ -83,6 +84,7 @@ net.cidr_contains
 net.cidr_contains_matches
 net.cidr_expand
 net.cidr_intersects
+net.cidr_merge
 not
 null
 numbers.range(a, b)
@@ -133,6 +135,7 @@ union
 units.parse_bytes
 upper
 urlquery.decode
+urlquery.decode_object
 urlquery.encode
 urlquery.encode_object
 uuid.rfc4122

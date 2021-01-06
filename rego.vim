@@ -33,10 +33,11 @@ syn match regoFuncObject "\<object\.\(get\|remove\|union\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
-syn match regoFuncEncoding1 "\<\(base64\|base64url\)\.\(encode\|decode\)\>"
-syn match regoFuncEncoding2 "\<urlquery\.\(encode\|decode\|encode_object\)\>"
-syn match regoFuncEncoding3 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
-syn match regoFuncEncoding4 "\<json\.\(filter\|remove\)\>"
+syn match regoFuncEncoding1 "\<base64\.\(encode\|decode\|is_valid\)\>"
+syn match regoFuncEncoding2 "\<base64url\.\(encode\|decode\)\>"
+syn match regoFuncEncoding3 "\<urlquery\.\(encode\|decode\|\(en\|de\)code_object\)\>"
+syn match regoFuncEncoding4 "\<\(json\|yaml\)\.\(marshal\|unmarshal\)\>"
+syn match regoFuncEncoding5 "\<json\.\(filter\|remove\)\>"
 syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
 syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
@@ -46,7 +47,7 @@ syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\>"
 syn match regoFuncHttp "\<http\.send\>"
-syn match regoFuncNet "\<net\.\(cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\)\>"
+syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
@@ -72,6 +73,7 @@ hi def link regoFuncEncoding1 Statement
 hi def link regoFuncEncoding2 Statement
 hi def link regoFuncEncoding3 Statement
 hi def link regoFuncEncoding4 Statement
+hi def link regoFuncEncoding5 Statement
 hi def link regoFuncTokenSigning Statement
 hi def link regoFuncTokenVerification1 Statement
 hi def link regoFuncTokenVerification2 Statement
