@@ -51,7 +51,10 @@ syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
-syn match regoFuncNumbers "\<numbers\.range\>"
+
+syn match   regoFuncNumbers "\<numbers\.\(range\|intn\)\>"
+syn keyword regoFuncNumbers round ceil floor abs
+
 syn match regoFuncSemver "\<semver\.\(is_valid\|compare\)\>"
 syn keyword regoFuncConversions to_number
 syn match regoFuncHex "\<hex\.\(encode\|decode\)\>"
