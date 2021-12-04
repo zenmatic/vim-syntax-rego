@@ -11,6 +11,7 @@ here`
 # XXX: this is a comment with xxx
 # BUG: this is a comment with a bug
 
+abs(x)
 all
 allow
 any
@@ -29,6 +30,7 @@ bits.negate
 bits.or
 bits.rsh
 bits.xor
+ceil(x)
 concat
 contains
 count
@@ -42,12 +44,13 @@ deny
 else
 endswith
 false
+floor(x)
 format_int
 glob.match
 glob.quote_meta
 graph.reachable
-hex.encode
 hex.decode
+hex.encode
 http.send
 import
 import
@@ -92,6 +95,7 @@ net.cidr_intersects
 net.cidr_merge
 not
 null
+numbers.intn(str, n)
 numbers.range(a, b)
 object.filter
 object.get
@@ -104,14 +108,15 @@ product
 re_match
 regex.find_all_string_submatch_n
 regex.find_n
-regex.is_valid(pattern)
 regex.globs_match
+regex.is_valid(pattern)
 regex.split
 regex.template_match
 rego.parse_module
 replace
-semver.is_valid(str)
+round
 semver.compare(str, str)
+semver.is_valid(str)
 some
 sort
 split
