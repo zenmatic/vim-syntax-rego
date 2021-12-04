@@ -103,7 +103,6 @@ object.remove
 object.union
 opa.runtime
 package
-package
 product
 re_match
 regex.find_all_string_submatch_n
@@ -125,13 +124,15 @@ startswith
 strings.replace_n
 substring
 sum
-time.clock
-time.date
-time.now_ns
-time.parse_duration_ns
-time.parse_ns
-time.parse_rfc3339_ns
-time.weekday
+time.add_date(ns, years, months, days)
+time.clock(ns)
+time.date(ns)
+time.diff(ns1, ns2)
+time.now_ns()
+time.parse_duration_ns(duration)
+time.parse_ns(layout, value)
+time.parse_rfc3339_ns(value)
+time.weekday(ns)
 to_number(x)
 trace
 trim
