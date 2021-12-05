@@ -42,8 +42,8 @@ syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
 syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\|diff\|add_date\)\>"
-syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_certificate_request\)\>"
-syn match regoFuncCryptography2 "\<crypto\.\(md5\|sha1\|sha256\)"
+syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_certificate_request\|parse_and_verify_certificates\)\>"
+syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\>"
 syn match regoFuncHttp "\<http\.send\>"
@@ -51,6 +51,7 @@ syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches
 syn match regoFuncRego "\<rego\.parse_module\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
+syn match regoFuncRand "\<rand\.intn\>"
 
 syn match   regoFuncNumbers "\<numbers\.\(range\|intn\)\>"
 syn keyword regoFuncNumbers round ceil floor abs
@@ -84,7 +85,6 @@ hi def link regoFuncTokenVerification1 Statement
 hi def link regoFuncTokenVerification2 Statement
 hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
-hi def link regoFuncCryptography2 Statement
 hi def link regoFuncGraphs Statement
 hi def link regoFuncGraphs2 Statement
 hi def link regoFuncHttp Statement
@@ -97,6 +97,7 @@ hi def link regoFuncNumbers Statement
 hi def link regoFuncSemver Statement
 hi def link regoFuncConversions Statement
 hi def link regoFuncHex Statement
+hi def link regoFuncRand Statement
 
 " https://www.openpolicyagent.org/docs/latest/policy-language/#strings
 syn region      regoString            start=+"+ skip=+\\\\\|\\"+ end=+"+

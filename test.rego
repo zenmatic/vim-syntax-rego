@@ -37,6 +37,7 @@ count
 crypto.md5
 crypto.sha1
 crypto.sha256
+crypto.x509.parse_and_verify_certificates
 crypto.x509.parse_certificate_request
 crypto.x509.parse_certificates
 default
@@ -104,6 +105,7 @@ object.union
 opa.runtime
 package
 product
+rand.intn
 re_match
 regex.find_all_string_submatch_n
 regex.find_n
