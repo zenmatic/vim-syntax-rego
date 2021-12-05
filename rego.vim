@@ -42,7 +42,7 @@ syn match regoFuncTokenSigning "\<io\.jwt\.\(encode_sign_raw\|encode_sign\)\>"
 syn match regoFuncTokenVerification1 "\<io\.jwt\.\(decode\|decode_verify\)\>"
 syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\|384\|512\)\>"
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\|diff\|add_date\)\>"
-syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_certificate_request\|parse_and_verify_certificates\)\>"
+syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_certificate_request\|parse_and_verify_certificates\|parse_rsa_private_key\)\>"
 syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\>"
