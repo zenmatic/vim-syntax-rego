@@ -40,6 +40,7 @@ crypto.sha256
 crypto.x509.parse_and_verify_certificates
 crypto.x509.parse_certificate_request
 crypto.x509.parse_certificates
+crypto.x509.parse_rsa_private_key
 default
 deny
 else
