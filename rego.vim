@@ -14,7 +14,7 @@ endif
 syn case match
 
 syn keyword regoDirective package import allow deny
-syn keyword regoKeywords as default else false import package not null true with some
+syn keyword regoKeywords as default else false import package not null true with some in print
 
 syn keyword regoFuncAggregates count sum product max min sort all any
 syn match regoFuncArrays "\<array\.\(concat\|slice\)\>"
