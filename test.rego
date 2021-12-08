@@ -11,6 +11,12 @@ here`
 # XXX: this is a comment with xxx
 # BUG: this is a comment with a bug
 
+allow {
+  print("finally can debug something by printing:" input.subject.username)
+  7 in arr
+  some x in arr
+}
+
 abs(x)
 all
 allow
@@ -56,6 +62,7 @@ hex.encode
 http.send
 import
 import
+in
 indexof
 intersection
 io.jwt.decode
@@ -105,6 +112,7 @@ object.remove
 object.union
 opa.runtime
 package
+print
 product
 rand.intn
 re_match
