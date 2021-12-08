@@ -102,6 +102,7 @@ net.cidr_contains_matches
 net.cidr_expand
 net.cidr_intersects
 net.cidr_merge
+net.lookup_ip_addr(name)
 not
 null
 numbers.intn(str, n)
