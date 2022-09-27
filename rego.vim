@@ -17,11 +17,11 @@ syn keyword regoDirective package import allow deny
 syn keyword regoKeywords as default else false import package not null true with some in print
 
 syn keyword regoFuncAggregates count sum product max min sort all any
-syn match regoFuncArrays "\<array\.\(concat\|slice\)\>"
+syn match regoFuncArrays "\<array\.\(concat\|slice\|reverse\)\>"
 syn keyword regoFuncSets intersection union
 
 syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper
-syn match regoFuncStrings2 "\<strings\.replace_n\>"
+syn match regoFuncStrings2 "\<strings\.\(replace_n\|reverse\)\>"
 syn match regoFuncStrings3 "\<contains\>"
 
 syn keyword regoFuncRegex re_match
@@ -44,6 +44,7 @@ syn match regoFuncTokenVerification2 "\<io\.jwt\.verify_\(rs\|ps\|es\|hs\)\(256\
 syn match regoFuncTime "\<time\.\(now_ns\|parse_ns\|parse_rfc3339_ns\|parse_duration_ns\|date\|clock\|weekday\|diff\|add_date\)\>"
 syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_certificate_request\|parse_and_verify_certificates\|parse_rsa_private_key\)\>"
 syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
+syn match regoFuncCryptography "\<crypto\.hmac\.\(md5\|sha1\|sha256\|sha512\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\>"
 syn match regoFuncHttp "\<http\.send\>"

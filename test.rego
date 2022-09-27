@@ -22,6 +22,7 @@ all
 allow
 any
 array.concat
+array.reverse
 array.slice
 as
 base64.decode
@@ -40,6 +41,10 @@ ceil(x)
 concat
 contains
 count
+crypto.hmac.md5
+crypto.hmac.sha1
+crypto.hmac.sha256
+crypto.hmac.sha512
 crypto.md5
 crypto.sha1
 crypto.sha256
@@ -134,6 +139,7 @@ split
 sprintf
 startswith
 strings.replace_n
+strings.reverse
 substring
 sum
 time.add_date(ns, years, months, days)
