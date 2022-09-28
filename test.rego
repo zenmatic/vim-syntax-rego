@@ -17,6 +17,10 @@ allow {
   some x in arr
 }
 
+every k, v in {"foo": "FOO", "bar": "BAR" } {
+  upper(k) == v
+}
+
 abs(x)
 all
 allow
@@ -56,6 +60,7 @@ default
 deny
 else
 endswith
+every
 false
 floor(x)
 format_int
