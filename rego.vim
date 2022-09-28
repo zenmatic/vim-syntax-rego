@@ -20,7 +20,7 @@ syn keyword regoFuncAggregates count sum product max min sort all any
 syn match regoFuncArrays "\<array\.\(concat\|slice\|reverse\)\>"
 syn keyword regoFuncSets intersection union
 
-syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper
+syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof indexof_n lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper
 syn match regoFuncStrings2 "\<strings\.\(replace_n\|reverse\)\>"
 syn match regoFuncStrings3 "\<contains\>"
 
@@ -29,7 +29,7 @@ syn match regoFuncRegex2 "\<regex\.\(is_valid\|split\|globs_match\|template_matc
 
 syn match regoFuncUuid "\<uuid.rfc4122\>"
 syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"
-syn match regoFuncObject "\<object\.\(get\|remove\|union\|filter\)\>"
+syn match regoFuncObject "\<object\.\(get\|remove\|union\|union_n\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse_bytes\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
@@ -46,7 +46,7 @@ syn match regoFuncCryptography "\<crypto\.x509\.\(parse_certificates\|parse_cert
 syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
 syn match regoFuncCryptography "\<crypto\.hmac\.\(md5\|sha1\|sha256\|sha512\)"
 syn keyword regoFuncGraphs walk
-syn match regoFuncGraphs2 "\<graph\.reachable\>"
+syn match regoFuncGraphs2 "\<graph\.reachable\(_paths\)\=\>"
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\|lookup_ip_addr\)\>"
 syn match regoFuncRego "\<rego\.parse_module\>"
