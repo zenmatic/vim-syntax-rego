@@ -62,6 +62,7 @@ format_int
 glob.match
 glob.quote_meta
 graph.reachable
+graph.reachable_paths
 hex.decode
 hex.encode
 http.send
@@ -69,6 +70,7 @@ import
 import
 in
 indexof
+indexof_n
 intersection
 io.jwt.decode
 io.jwt.decode_verify
@@ -116,6 +118,7 @@ object.filter
 object.get
 object.remove
 object.union
+object.union_n
 opa.runtime
 package
 print
