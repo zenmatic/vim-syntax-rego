@@ -14,7 +14,7 @@ endif
 syn case match
 
 syn keyword regoDirective package import allow deny
-syn keyword regoKeywords as default else every false import package not null true with some in print
+syn keyword regoKeywords as default else every false if import package not null true with some in print
 
 syn keyword regoFuncAggregates count sum product max min sort all any
 syn match regoFuncArrays "\<array\.\(concat\|slice\|reverse\)\>"
@@ -29,7 +29,7 @@ syn match regoFuncRegex2 "\<regex\.\(is_valid\|split\|globs_match\|template_matc
 
 syn match regoFuncUuid "\<uuid.rfc4122\>"
 syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"
-syn match regoFuncObject "\<object\.\(get\|remove\|union\|union_n\|filter\)\>"
+syn match regoFuncObject "\<object\.\(get\|remove\|subset\|union\|union_n\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
 syn match regoFuncUnits "\<units\.parse\(_bytes\)\=\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name

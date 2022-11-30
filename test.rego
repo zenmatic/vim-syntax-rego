@@ -25,6 +25,16 @@ deny[{"allowed": false, "message": rego.metadata.rule().description}] {
     input.user != input.owner
 }
 
+package authz
+import future.keywords
+
+allow if not denied # one expression only => no { ... } needed!
+
+deny contains msg if {
+    count(violations) > 0
+    msg := sprintf("there are %d violations", [count(violations)])
+}
+
 abs(x)
 all
 allow
@@ -131,6 +141,7 @@ numbers.range(a, b)
 object.filter
 object.get
 object.remove
+object.subset
 object.union
 object.union_n
 opa.runtime
