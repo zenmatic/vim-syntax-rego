@@ -72,6 +72,11 @@ glob.match
 glob.quote_meta
 graph.reachable
 graph.reachable_paths
+graphql.is_valid
+graphql.parse
+graphql.parse_and_verify
+graphql.parse_query
+graphql.parse_schema
 hex.decode
 hex.encode
 http.send
@@ -176,6 +181,7 @@ trim_suffix
 true
 type_name
 union
+units.parse
 units.parse_bytes
 upper
 urlquery.decode

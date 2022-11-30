@@ -31,7 +31,7 @@ syn match regoFuncUuid "\<uuid.rfc4122\>"
 syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"
 syn match regoFuncObject "\<object\.\(get\|remove\|union\|union_n\|filter\)\>"
 syn match regoFuncGlob "\<glob\.\(match\|quote_meta\)\>"
-syn match regoFuncUnits "\<units\.parse_bytes\>"
+syn match regoFuncUnits "\<units\.parse\(_bytes\)\=\>"
 syn keyword regoFuncTypes is_number is_string is_boolean is_array is_set is_object is_null type_name
 syn match regoFuncEncoding1 "\<base64\.\(encode\|decode\|is_valid\)\>"
 syn match regoFuncEncoding2 "\<base64url\.\(encode\(_no_pad\)\=\|decode\)\>"
@@ -47,6 +47,7 @@ syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
 syn match regoFuncCryptography "\<crypto\.hmac\.\(md5\|sha1\|sha256\|sha512\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\(_paths\)\=\>"
+syn match regoFuncGraphQl "\<graphql\.\(is_valid\|parse\(_\(and_verify\|query\|schema\)\)\=\)\>"
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\|lookup_ip_addr\)\>"
 syn match regoFuncRego "\<rego\.\(parse_module\|metadata\.\(rule\|chain\)\)\>"
@@ -87,6 +88,7 @@ hi def link regoFuncTokenVerification2 Statement
 hi def link regoFuncTime Statement
 hi def link regoFuncCryptography Statement
 hi def link regoFuncGraphs Statement
+hi def link regoFuncGraphQl Statement
 hi def link regoFuncGraphs2 Statement
 hi def link regoFuncHttp Statement
 hi def link regoFuncNet Statement
