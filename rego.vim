@@ -49,7 +49,7 @@ syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\(_paths\)\=\>"
 syn match regoFuncHttp "\<http\.send\>"
 syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\|lookup_ip_addr\)\>"
-syn match regoFuncRego "\<rego\.parse_module\>"
+syn match regoFuncRego "\<rego\.\(parse_module\|metadata\.\(rule\|chain\)\)\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace
 syn match regoFuncRand "\<rand\.intn\>"

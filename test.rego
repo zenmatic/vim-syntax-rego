@@ -21,6 +21,10 @@ every k, v in {"foo": "FOO", "bar": "BAR" } {
   upper(k) == v
 }
 
+deny[{"allowed": false, "message": rego.metadata.rule().description}] {
+    input.user != input.owner
+}
+
 abs(x)
 all
 allow
@@ -137,6 +141,8 @@ regex.is_valid(pattern)
 regex.split
 regex.template_match
 rego.parse_module
+rego.metadata.chain()
+rego.metadata.rule()
 replace
 round
 semver.compare(str, str)
