@@ -25,7 +25,7 @@ syn match regoFuncStrings2 "\<strings\.\(replace_n\|reverse\|any_prefix_match\|a
 syn match regoFuncStrings3 "\<contains\>"
 
 syn keyword regoFuncRegex re_match
-syn match regoFuncRegex2 "\<regex\.\(is_valid\|split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\)\>"
+syn match regoFuncRegex2 "\<regex\.\(is_valid\|split\|globs_match\|template_match\|find_n\|find_all_string_submatch_n\|replace\)\>"
 
 syn match regoFuncUuid "\<uuid.rfc4122\>"
 syn match regoFuncBits "\<bits\.\(or\|and\|negate\|xor\|lsh\|rsh\)\>"

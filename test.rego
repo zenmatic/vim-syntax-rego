@@ -154,6 +154,7 @@ regex.find_all_string_submatch_n
 regex.find_n
 regex.globs_match
 regex.is_valid(pattern)
+regex.replace
 regex.split
 regex.template_match
 rego.parse_module
