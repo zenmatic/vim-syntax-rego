@@ -47,9 +47,9 @@ syn match regoFuncCryptography "\<crypto\.\(md5\|sha1\|sha256\)"
 syn match regoFuncCryptography "\<crypto\.hmac\.\(md5\|sha1\|sha256\|sha512\)"
 syn keyword regoFuncGraphs walk
 syn match regoFuncGraphs2 "\<graph\.reachable\(_paths\)\=\>"
-syn match regoFuncGraphQl "\<graphql\.\(is_valid\|parse\(_\(and_verify\|query\|schema\)\)\=\)\>"
+syn match regoFuncGraphQl "\<graphql\.\(\(schema_\)\=is_valid\|parse\(_\(and_verify\|query\|schema\)\)\=\)\>"
 syn match regoFuncHttp "\<http\.send\>"
-syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\|lookup_ip_addr\)\>"
+syn match regoFuncNet "\<net\.\(cidr_merge\|cidr_contains\|cidr_contains_matches\|cidr_intersects\|cidr_expand\|lookup_ip_addr\|cidr_is_valid\)\>"
 syn match regoFuncRego "\<rego\.\(parse_module\|metadata\.\(rule\|chain\)\)\>"
 syn match regoFuncOpa "\<opa\.runtime\>"
 syn keyword regoFuncDebugging trace

@@ -35,6 +35,10 @@ deny contains msg if {
     msg := sprintf("there are %d violations", [count(violations)])
 }
 
+valid_cidr_example {
+	net.cidr_is_valid("192.168.0.0/24")
+}
+
 abs(x)
 all
 allow
@@ -87,6 +91,7 @@ graphql.parse
 graphql.parse_and_verify
 graphql.parse_query
 graphql.parse_schema
+graphql.schema_is_valid
 hex.decode
 hex.encode
 http.send
@@ -132,6 +137,7 @@ net.cidr_contains
 net.cidr_contains_matches
 net.cidr_expand
 net.cidr_intersects
+net.cidr_is_valid
 net.cidr_merge
 net.lookup_ip_addr(name)
 not
