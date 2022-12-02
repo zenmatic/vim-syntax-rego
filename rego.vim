@@ -21,7 +21,7 @@ syn match regoFuncArrays "\<array\.\(concat\|slice\|reverse\)\>"
 syn keyword regoFuncSets intersection union
 
 syn keyword regoFuncStrings concat /\<contains\>/ endswith format_int indexof indexof_n lower replace split sprintf startswith substring trim trim_left trim_prefix trim_right trim_suffix trim_space upper
-syn match regoFuncStrings2 "\<strings\.\(replace_n\|reverse\)\>"
+syn match regoFuncStrings2 "\<strings\.\(replace_n\|reverse\|any_prefix_match\|any_suffix_match\)\>"
 syn match regoFuncStrings3 "\<contains\>"
 
 syn keyword regoFuncRegex re_match

@@ -168,6 +168,8 @@ sort
 split
 sprintf
 startswith
+strings.any_prefix_match
+strings.any_suffix_match
 strings.replace_n
 strings.reverse
 substring
